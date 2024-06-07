@@ -14,3 +14,27 @@
 </ion-toolbar>
 </ion-header>
 </ion-content>
+
+<ion-card>
+<ion-card-header>
+<ion-input>
+[(ngModel)]="areaBuscarPokemon"
+[counter]="true"
+fill="solid"
+helperText="Área para buscar por Pokemon"
+label-placement="floating"
+label="CEP"
+maxlength="8"
+placeholder="50630520"
+type="text"
+></ion-input>
+<ion-button 
+expand="block"
+fill="solid"
+(click)="buscarPokemon()"
+>
+BuscarPor Pokemon
+<ion_icon name="search" slot="end"></ion_icon>
+</ion-button>
+</ion-card-header>
+</ion-card>
